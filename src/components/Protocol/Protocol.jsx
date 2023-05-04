@@ -12,7 +12,7 @@ function Protocol() {
           Butane Core is an Open-Source, Typescript-Based, Layer 1 Blockchain Protocol built to be simple and efficient.
         </p>
         <ul className={styles.keyPoints}>
-          <li className={styles.keyPoint}>- Eco-Friendly DPoS Consensus</li>
+          <li className={styles.keyPoint}>- Eco-Friendly PoS Consensus</li>
           <li className={styles.keyPoint}>- Expandable, Modular Codebase</li>
           <li className={styles.keyPoint}>- Customizable Transaction Logic</li>
         </ul>
