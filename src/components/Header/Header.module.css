@@ -1,0 +1,54 @@
+/* Header.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 50px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navItem::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.navItem:hover {
+  color: #f1c40f;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+.telegramIcon {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}

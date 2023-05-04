@@ -1,0 +1,86 @@
+/* Protocol.module.css */
+
+.protocol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.heroImage {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: right;
+}
+
+.heroReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.content {
+  width: 45%;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.keyPoints {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.keyPoint {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.githubBtn {
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.githubBtn:hover {
+  background-color: #f1c40f;
+  color: #1a1a1a;
+}
+
+@media screen and (max-width: 768px) {
+  .protocol {
+    flex-direction: column;
+  }
+
+  .heroImage {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+  
