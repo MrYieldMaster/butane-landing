@@ -10,7 +10,7 @@
 }
 
 .logo {
-  width: 50px;
+  width: 80px;
 }
 
 .navLinks {
@@ -41,7 +41,7 @@
 }
 
 .navItem:hover {
-  color: #f1c40f;
+  color: #b42a0a;
 }
 
 .navItem:hover::after {

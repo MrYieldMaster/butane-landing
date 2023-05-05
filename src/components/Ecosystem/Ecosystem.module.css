@@ -1,21 +1,33 @@
 /* Ecosystem.module.css */
 
 .ecosystem {
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "content"
+    "image1";
   align-items: center;
-  justify-content: space-between;
   padding: 2rem;
   background-color: #f9f9f9;
 }
 
 .heroImage {
-  width: 50%;
+  grid-area: hero;
+  max-width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .content {
-  width: 45%;
+  grid-area: content;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .title {
@@ -32,11 +44,12 @@
   justify-content: space-between;
   margin-bottom: 2rem;
   margin-top : 2rem;
-  margin-left: 1rem;
+  margin-left: 10rem;
   font-size: 3rem;
   color: #1a1a1a;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
+  gap: 1rem;
 
 }
 
@@ -52,16 +65,41 @@
 }
 
 .images { 
+  flex-direction: row;
+  display: flex;
   justify-content: space-evenly;
   margin-bottom: 2rem;
-  width: fit-content;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   border-radius: 2px solid #f1c40f;
   padding: 1rem;
+  gap: 1rem;
 }
 
+.image1Wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.image1 {
+  grid-area: image1;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+
 .image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   object-position: center;
 }
@@ -70,6 +108,10 @@
 @media (max-width: 768px) {
   .ecosystem {
     flex-direction: column;
+  }
+
+  .socials {
+    margin-left: 2rem;
   }
 
   .heroImage {

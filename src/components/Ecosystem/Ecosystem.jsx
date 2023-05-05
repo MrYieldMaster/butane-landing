@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Ecosystem.module.css';
-import HeroImage from '../../assets/images/token.png';
+import HeroImage from '../../assets/images/butane.jpg';
 import Image1 from '../../assets/images/tokenicons.png';
 import Image2 from '../../assets/images/googleplay.png';
 import Image3 from '../../assets/images/appstore.png';
@@ -22,10 +22,12 @@ function Ecosystem() {
           <i className={`fa fa-discord ${styles.icon}`} aria-hidden="true"></i>
         </div>
         <div className={styles.images}>
-          <img src={Image1} alt="ddc" className={styles.image} />
           <img src={Image2} alt="bbc" className={styles.image} />
           <img src={Image3} alt="gas 3" className={styles.image} />
         </div>
+      </div>
+      <div className={styles.image1Wrapper}>
+        <img src={Image1} alt="ddc" className={styles.image1} />
       </div>
     </section>
   );
